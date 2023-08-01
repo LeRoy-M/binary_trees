@@ -6,7 +6,7 @@
  * @parent: Binary tree root
  * @value: Value to be inserted into tree
  *
- * Return: ALways struct
+ * Return: Pointer to the newly created node, OR NULL on failure
  */
 
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
