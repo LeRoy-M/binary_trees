@@ -22,13 +22,10 @@ binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
 	if (parent->left)
 	{
 		l_leave->left = parent->left;
-		parent->left = l_leave;
-		l_leave->left->parent = l_leave;
+		parent->left->parent = l_leave;
 	}
-	else
-	{
-		parent->left = l_leave;
-	}
+
+	parent->left = l_leave;
 
 	return (l_leave);
 }
