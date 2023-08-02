@@ -7,7 +7,7 @@ size_t bi_tree_h(const binary_tree_t *tree, size_t h);
  *
  * @tree: Binary tree parent node
  *
- * Return: Always VOID
+ * Return: Always UNSIGNED INT
  */
 
 size_t binary_tree_height(const binary_tree_t *tree)
@@ -18,6 +18,15 @@ size_t binary_tree_height(const binary_tree_t *tree)
 
 	return (height);
 }
+
+/**
+ * bi_tree_h - Function that measures the height of a binary tree
+ *
+ * @tree: Binary tree parent node
+ * @h: Height of binary tree
+ *
+ * Return: Always UNSIGNED INT
+ */
 
 size_t bi_tree_h(const binary_tree_t *tree, size_t h)
 {
