@@ -1,7 +1,5 @@
 #include "binary_trees.h"
 
-size_t bi_tree_h(const binary_tree_t *tree, size_t h);
-
 /**
  * binary_tree_height - Function that measures the height of a binary tree
  *
@@ -12,37 +10,14 @@ size_t bi_tree_h(const binary_tree_t *tree, size_t h);
 
 size_t binary_tree_height(const binary_tree_t *tree)
 {
-	size_t height;
+	size_t l_height, r_height;
 
-	height = bi_tree_h(tree, 0);
-
-	return (height);
-}
-
-/**
- * bi_tree_h - Function that measures the height of a binary tree recursively
- *
- * @tree: Binary tree parent node
- * @h: Height of binary tree
- *
- * Return: Always UNSIGNED INT
- */
-
-size_t bi_tree_h(const binary_tree_t *tree, size_t h)
-{
+	l_height = 0, r_height = 0;
 	if (!tree)
 		return (0);
 
-	if (tree->left)
-	{
-		h++;
-		bi_tree_h(tree->left, h);
-	}
-	if (tree->right)
-	{
-		h++;
-		bi_tree_h(tree->right, h);
-	}
+	l_height = tree->left ? 1 + binary_tree_height(tree->left) : 0;
+	r_height = tree->right ? 1 + binary_tree_height(tree->right) : 0;
 
-	return (h);
+	return ((l_height > r_height) ? l_height : r_height);
 }
