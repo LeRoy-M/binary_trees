@@ -20,7 +20,7 @@ size_t binary_tree_height(const binary_tree_t *tree)
 }
 
 /**
- * bi_tree_h - Function that measures the height of a binary tree
+ * bi_tree_h - Function that measures the height of a binary tree recursively
  *
  * @tree: Binary tree parent node
  * @h: Height of binary tree
