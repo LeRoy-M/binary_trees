@@ -1,7 +1,7 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_is_full - Function that checks if a binary tree is full 
+ * binary_tree_is_full - Function that checks if a binary tree is full
  *
  * @tree: Binary tree parent node
  *
