@@ -14,10 +14,10 @@ binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
 {
 	binary_tree_t *l_leave;
 
-	l_leave = binary_tree_node(parent, value);
-
-	if (!parent || !l_leave)
+	if (!parent)
 		return (NULL);
+
+	l_leave = binary_tree_node(parent, value);
 
 	if (parent->left)
 	{
