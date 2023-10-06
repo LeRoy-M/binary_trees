@@ -38,8 +38,8 @@ binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
  * ancestor of two nodes
  *
  * @root: Binary tree root node
- * @first: Pointer to first binary tree node
- * @second: Pointer to second binary tree node
+ * @n1: Pointer to first binary tree node
+ * @n2: Pointer to second binary tree node
  *
  * Return: binary_tree_t strcut OR NULL
  */
